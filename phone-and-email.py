@@ -41,3 +41,7 @@ for phoneNumber in extractedPhone:
 print(allPhoneNumbers)
 print(extractedEmail)
 # ToDo: Copy extracted phone/email to clipboard
+results = '\n'.join(allPhoneNumbers) + '\n' + '\n'.join(extractedEmail)
+pyperclip.copy(results)
+
+
